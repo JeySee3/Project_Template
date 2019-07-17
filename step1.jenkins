@@ -1,6 +1,3 @@
-  #!groovy
-  
-  // Check ansible properties
   properties([disableConcurrentBuilds()])
   
   pipeline {
