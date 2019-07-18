@@ -3,8 +3,8 @@
 properties([disableConcurrentBuilds()])
 
 pipeline {
-        agent {
-            label 'master'
+    agent {
+        label 'master'
         }
      options {
         buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10'))
@@ -12,11 +12,12 @@ pipeline {
      }
      stages {
         stage("create docker image") {
-            echo " ========== start building image =========== "
-            dir ('docker/toolbox') {
-                    sh 'docker build . '
-            }
+           steps {
+                echo " ========== start building image =========== "
+                dir ('docker/toolbox') {
+                        sh 'docker build . '
         }
-     }
-   }
+      }
+    }
+  }
 }
