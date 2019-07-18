@@ -36,7 +36,7 @@ pipeline {
                 sh '''
                 docker push 6151118/toolbox:latest 
                 '''
-     }
+      }
      }           
   }
 }
