@@ -30,7 +30,7 @@ pipeline {
         }
       }
     }
-        stage("create docker image") {
+        stage("docker push") {
            steps {
                 echo " ========== start pushing image =========== "
                 sh '''
