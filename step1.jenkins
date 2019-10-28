@@ -16,7 +16,7 @@
         }
         stage("Second step") {
             steps {
-                sh 'ssh root@ansible \'uptime\''
+                sh 'ssh root@ub1 \'uptime\''
             }
         }
     }
