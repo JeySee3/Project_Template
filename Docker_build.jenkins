@@ -29,7 +29,7 @@ pipeline {
                         sh 'docker build -t 6151118/toolbox:latest . '
         }
       }
-    }
+//    }
         stage("docker push") {
            steps {
                 echo " ========== start pushing image =========== "
@@ -39,4 +39,4 @@ pipeline {
       }
      }           
   }
-
+}
